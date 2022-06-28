@@ -4,16 +4,21 @@
 body{
     /* 全体の横幅 */
     width: 100vw;
+    height: 100vh;
     /* 全体を中央寄せ */
     margin: auto;
     /* 全体の余白 */
     padding: 10px;
     
     display: flex;
+    justify-content: space-between;
+    align-items: center;
     
-    background-image: url(assets/img/bg.jpg);
+    background-image: url(/assets/img/bg.jpg);
     background-size: cover;
     background-position: center;
+    
+    font-family: happy-ruika, sans-serif;
 }
 
 /* 数字 */
@@ -29,6 +34,8 @@ h1{
     line-height: 100px;
     
     font-size: 48px;
+    
+    color: #ffffff;
 }
 
 /* ボタン共通 */
@@ -46,18 +53,33 @@ input{
     
     /* 文字の大きさ */
     font-size: 48px;
-}
-
-/* プラスボタン */
-input[value="投票する"]{
     
-    /* 文字の色 */
-    color: #f9f9f9;
+    padding: 2vh 2vw;
+    
+    border-radius: 15px;
+    
+    font-family: happy-ruika, sans-serif;
     
     /* 背景 */
-    background: #448AFF;
+    background: #ffffff;
+}
+
+.bambooshoot{
+    /* 文字の色 */
+    color: #27387E;
+}
+
+.mushroom{
+     /* 文字の色 */
+    color: #F24C5A;
 }
 
 .box{
-    width: 40vw;
+    width: 42vw;
+    text-align: center;
+}
+
+img {
+    width: 30vw;
+    padding: 3vh 0;
 }

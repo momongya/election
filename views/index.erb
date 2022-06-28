@@ -2,22 +2,34 @@
 <html lang="ja">
 <head>
   <meta charset="UTF-8">
-  <title>Document</title>
+  <title>きのこたけのこ論争</title>
   <link rel="stylesheet" href="/assets/css/bootstrap.min.css">
   <link rel="stylesheet" href="/assets/css/count.css">
 </head>
 <body>
   <div class="box">
     <h1><%= @number1 %>票</h1>
+    <img src="/assets/img/bambooshoot.png" alt="">
     <form action="/plus1" method="post">
-      <input type="submit" value="投票する">
+      <input type="submit" class="bambooshoot" value="投票する">
     </form>
   </div>
   <div class="box">
     <h1><%= @number2 %>票</h1>
+    <img src="/assets/img/mushroom.png" alt="">
     <form action="/plus2" method="post">
-      <input type="submit" value="投票する">
+      <input type="submit" class="mushroom" value="投票する">
     </form>
   </div>
+  <script>
+  (function(d) {
+    var config = {
+      kitId: 'aki8ovv',
+      scriptTimeout: 3000,
+      async: true
+    },
+    h=d.documentElement,t=setTimeout(function(){h.className=h.className.replace(/\bwf-loading\b/g,"")+" wf-inactive";},config.scriptTimeout),tk=d.createElement("script"),f=false,s=d.getElementsByTagName("script")[0],a;h.className+=" wf-loading";tk.src='https://use.typekit.net/'+config.kitId+'.js';tk.async=true;tk.onload=tk.onreadystatechange=function(){a=this.readyState;if(f||a&&a!="complete"&&a!="loaded")return;f=true;clearTimeout(t);try{Typekit.load(config)}catch(e){}};s.parentNode.insertBefore(tk,s)
+  })(document);
+</script>
 </body>
 </html>
