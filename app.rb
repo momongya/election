@@ -15,6 +15,9 @@ end
 get '/' do
   @number1 = Count.find(1).number
   @number2 = Count.find(2).number
+  
+  @persent1 = Count.find(1).number * 100 / (Count.find(1).number + Count.find(2).number)
+  @persent2 = Count.find(2).number * 100 / (Count.find(1).number + Count.find(2).number)
   erb :index
 end
 

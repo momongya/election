@@ -8,18 +8,24 @@
 </head>
 <body>
   <div class="box">
-    <h1><%= @number1 %>票</h1>
+    <h1><%= @persent1 %>%</h1>
     <img src="/assets/img/bambooshoot.png" alt="">
-    <form action="/plus1" method="post">
-      <input type="submit" class="bambooshoot" value="投票する">
-    </form>
+    <div class="election_box">
+      <h2><%= @number1 %>票</h2>
+      <form action="/plus1" method="post">
+        <input type="submit" class="bambooshoot" value="投票する">
+      </form>
+    </div>
   </div>
   <div class="box">
-    <h1><%= @number2 %>票</h1>
+    <h1><%= @persent2 %>%</h1>
     <img src="/assets/img/mushroom.png" alt="">
-    <form action="/plus2" method="post">
-      <input type="submit" class="mushroom" value="投票する">
-    </form>
+    <div class="election_box">
+      <h2><%= @number2 %>票</h2>
+      <form action="/plus2" method="post">
+        <input type="submit" class="mushroom" value="投票する">
+      </form>
+    </div>
   </div>
   <script>
   (function(d) {
